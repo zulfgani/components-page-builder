@@ -7,6 +7,7 @@ For more information, [contact me here](https://cpengineered.com/contact).
 
 # Add theme support for the builder
 
+Note: $theme_name should be predifined within the theme itself else replace it with a hard printed name!
 ```
 if ( class_exists( 'totclcInit' ) ) {
 	add_theme_support( 
