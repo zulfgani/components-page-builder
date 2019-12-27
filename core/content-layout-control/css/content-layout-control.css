@@ -1,0 +1,715 @@
+@keyframes clc_spin {
+    0% {
+        -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotateZ(-360deg);
+        transform: rotateZ(-360deg)
+    }
+    100% {
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        transform: rotateZ(0deg)
+    }
+}
+
+@-webkit-keyframes clc_spin {
+    0% {
+        -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotateZ(-360deg);
+        transform: rotateZ(-360deg)
+    }
+    100% {
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        transform: rotateZ(0deg)
+    }
+}
+
+@-moz-keyframes clc_spin {
+    0% {
+        -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotateZ(-360deg);
+        transform: rotateZ(-360deg)
+    }
+    100% {
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        transform: rotateZ(0deg)
+    }
+}
+
+@-o-keyframes clc_spin {
+    0% {
+        -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotateZ(-360deg);
+        transform: rotateZ(-360deg)
+    }
+    100% {
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        transform: rotateZ(0deg)
+    }
+}
+
+.clc-spinner,
+.clc-post-selection-search .clc-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    border-top: 2px solid #32373c;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid #32373c;
+    border-right: 2px solid transparent;
+    -webkit-animation: clc_spin .7s linear infinite;
+    -moz-animation: clc_spin .7s linear infinite;
+    -o-animation: clc_spin .7s linear infinite;
+    animation: clc_spin .7s linear infinite;
+    visibility: hidden;
+    opacity: .5
+}
+
+.clc-dashicon,
+.clc-component-hero-block .link-panel-control .add-link:before,
+.clc-component-content-block .link-panel-control .add-link:before,
+.clc-component-content-block-two .link-panel-control .add-link:before,
+.clc-component-classic-cta-banner .link-panel-control .add-link:before,
+.clc-component-classic-cta-banner-two .link-panel-control .add-link:before,
+.clc-component-posts .add-post:before {
+    display: inline-block;
+    font: normal 20px/1 'dashicons';
+    speak: none;
+    position: relative;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.clc-list-item,
+.clc-component-hero-block .link-panel-control-links>li,
+.clc-component-content-block .link-panel-control-links>li,
+.clc-component-content-block-two .link-panel-control-links>li,
+.clc-component-classic-cta-banner .link-panel-control-links>li,
+.clc-component-classic-cta-banner-two .link-panel-control-links>li {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 5px 40px 5px 10px;
+    border: 1px solid #e5e5e5;
+    border-left-width: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.clc-list-item-remove,
+.clc-component-hero-block .link-panel-control-links .remove-link,
+.clc-component-content-block .link-panel-control-links .remove-link,
+.clc-component-content-block-two .link-panel-control-links .remove-link,
+.clc-component-classic-cta-banner .link-panel-control-links .remove-link,
+.clc-component-classic-cta-banner-two .link-panel-control-links .remove-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-left: 1px solid #e5e5e5;
+    line-height: 20px;
+    text-align: center;
+    color: red;
+    overflow: hidden
+}
+
+.clc-list-item-remove:before,
+.clc-component-hero-block .link-panel-control-links .remove-link:before,
+.clc-component-content-block .link-panel-control-links .remove-link:before,
+.clc-component-content-block-two .link-panel-control-links .remove-link:before,
+.clc-component-classic-cta-banner .link-panel-control-links .remove-link:before,
+.clc-component-classic-cta-banner-two .link-panel-control-links .remove-link:before {
+    content: '\f335';
+    display: block;
+    width: 30px;
+    height: 30px;
+    font: normal 20px/1 'dashicons';
+    line-height: 30px;
+    speak: none;
+    position: relative;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.clc-list-item-remove:hover,
+.clc-list-item-remove:focus,
+.clc-component-hero-block .link-panel-control-links .remove-link:hover,
+.clc-component-hero-block .link-panel-control-links .remove-link:focus,
+.clc-component-content-block .link-panel-control-links .remove-link:hover,
+.clc-component-content-block .link-panel-control-links .remove-link:focus,
+.clc-component-content-block-two .link-panel-control-links .remove-link:hover,
+.clc-component-content-block-two .link-panel-control-links .remove-link:focus,
+.clc-component-classic-cta-banner .link-panel-control-links .remove-link:hover,
+.clc-component-classic-cta-banner .link-panel-control-links .remove-link:focus,
+.clc-component-classic-cta-banner-two .link-panel-control-links .remove-link:hover,
+.clc-component-classic-cta-banner-two .link-panel-control-links .remove-link:focus  {
+    background: red;
+    color: #fff
+}
+
+#clc-secondary-panel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -301px;
+    width: 300px;
+    overflow: hidden;
+    background: #fff;
+    transition: left .18s;
+    z-index: 1
+}
+
+.clc-secondary-open #customize-preview {
+    opacity: .4
+}
+
+.clc-secondary-open .wp-full-overlay-main {
+    left: 300px
+}
+
+.clc-secondary-open #clc-secondary-panel {
+    left: 0
+}
+
+#clc-secondary-panel .clc-header {
+    padding: 10px;
+    height: 25px;
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    text-align: right
+}
+
+#clc-secondary-panel .clc-secondary-content {
+    position: absolute;
+    top: 46px;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden
+}
+
+#clc-secondary-panel .clc-secondary-content>ul {
+    margin: 0
+}
+
+.clc-component-list>ul {
+    margin: 0
+}
+
+.clc-component-list>ul>li {
+    margin-bottom: 0
+}
+
+.clc-component-list .component {
+    display: block;
+    position: relative;
+    padding: 20px 15px 20px 60px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #32373c;
+    text-decoration: none
+}
+
+.clc-component-list .component:hover,
+.clc-component-list .component:focus {
+    background: #fafafa
+}
+
+.clc-component-list .component:before {
+    content: "\f333";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    font: normal 20px/1 'dashicons';
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.clc-component-list h4 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.clc-component-list .description {
+    font-size: 12px;
+    color: #777
+}
+
+.clc-content-list>li {
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04)
+}
+
+.clc-content-list>li .header {
+    position: relative;
+    background: #fafafa;
+    cursor: move
+}
+
+.clc-content-list>li .header .name {
+    margin: 0;
+    padding: 15px;
+    color: #23282d;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.clc-content-list>li .header .name .title {
+    padding-left: .25em;
+    color: #666
+}
+
+.clc-content-list>li .clc-toggle-component-form {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    overflow: hidden
+}
+
+.clc-content-list>li .clc-toggle-component-form:before {
+    right: 0;
+    content: '\f140';
+    font: normal 20px/1 'dashicons';
+    speak: none;
+    display: block;
+    text-align: center;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 48px;
+    background: #fafafa
+}
+
+.clc-content-list>li .control {
+    padding: 10px
+}
+
+.clc-content-list>li .setting,
+.clc-content-list>li label {
+    display: block;
+    margin-bottom: 20px
+}
+
+.clc-content-list>li .setting:last-child,
+.clc-content-list>li label:last-child {
+    margin-bottom: 0
+}
+
+.clc-content-list>li textarea {
+    width: 98%;
+    height: 10em
+}
+
+.clc-content-list>li .footer {
+    padding: 10px;
+    border-top: 1px solid #e5e5e5;
+    text-align: right
+}
+
+.clc-content-list>li .footer .delete {
+    color: #f00
+}
+
+.clc-content-list>li .control,
+.clc-content-list>li .footer {
+    display: none
+}
+
+.clc-content-list>li.is-open .header {
+    border-bottom: 1px solid #e5e5e5
+}
+
+.clc-content-list>li.is-open .clc-toggle-component-form:before {
+    content: '\f142'
+}
+
+.clc-content-list>li.is-open .control,
+.clc-content-list>li.is-open .footer {
+    display: block
+}
+
+.clc-content-list .clc-content-list-placeholder {
+    display: block;
+    width: 100%;
+    height: 48px;
+    border: 1px dashed #bbb;
+    background: #fafafa
+}
+
+.customize-control-content_layout .buttons {
+    text-align: right
+}
+
+.customize-control-content_layout .add-component:before {
+    content: '\f132';
+    display: inline-block;
+    font: normal 20px/1 'dashicons';
+    speak: none;
+    position: relative;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: transform .2s
+}
+
+.clc-component-list-open .add-component:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.clc-content-list .buttons {
+    margin-top: 10px;
+    text-align: left
+}
+
+.clc-content-list .buttons button {
+    outline: 0
+}
+
+.clc-post-selection-search label {
+    position: relative;
+    display: block;
+    padding: 10px
+}
+
+.clc-post-selection-search .customize-control-title {
+    margin-bottom: 0
+}
+
+.clc-post-selection-search input {
+    width: 85%
+}
+
+.clc-post-selection-search .clc-spinner {
+    position: absolute;
+    bottom: 14px;
+    right: 10px
+}
+
+.fetching .clc-spinner {
+    visibility: visible
+}
+
+.clc-results-list {
+    margin: 0;
+    border-top: 1px solid #e5e5e5
+}
+
+.clc-results-list li {
+    margin: 0
+}
+
+.clc-results-list a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #32373c;
+    text-decoration: none
+}
+
+.clc-results-list a:hover,
+.clc-results-list a:focus {
+    background: #fafafa
+}
+
+.clc-results-list h4 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.clc-results-list .description {
+    font-size: 12px;
+    color: #777
+}
+
+.clc-link-panel .customize-control-title {
+    margin-bottom: 0
+}
+
+.clc-link-panel.search-visible .clc-link-panel-search {
+    left: 0
+}
+
+.clc-link-panel.search-visible .clc-link-panel-form {
+    left: -100%
+}
+
+.clc-link-panel .button-link {
+    line-height: 28px;
+    text-decoration: none
+}
+
+.clc-link-panel-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: .3s left
+}
+
+.clc-link-panel-form label {
+    display: block;
+    margin-bottom: 10px
+}
+
+.clc-link-panel-form input {
+    width: 100%
+}
+
+.clc-link-panel-form .add-link {
+    margin-right: .5em
+}
+
+.clc-link-panel-search {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    transition: .3s left;
+    box-sizing: border-box
+}
+
+.clc-link-panel-search-form {
+    margin-left: -10px;
+    margin-right: -10px
+}
+
+.clc-component-content-block .placeholder,
+.clc-component-content-block-two .placeholder,
+.clc-component-classic-cta-banner .placeholder {
+    padding: 2em;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center
+}
+
+.clc-component-content-block .thumb,
+.clc-component-content-block-two .thumb,
+.clc-component-classic-cta-banner .thumb {
+    max-width: 100%
+}
+
+.clc-component-content-block .thumb img,
+.clc-component-content-block-two .thumb img,
+.clc-component-classic-cta-banner .thumb img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%
+}
+
+.clc-component-content-block .thumb.loading,
+.clc-component-content-block-two .thumb.loading,
+.clc-component-classic-cta-banner .thumb.loading {
+    position: relative;
+    padding: 2em;
+    min-height: 50px;
+    background: rgba(0, 0, 0, 0.15)
+}
+
+.clc-component-content-block .thumb.loading:after,
+.clc-component-content-block-two .thumb.loading:after,
+.clc-component-classic-cta-banner .thumb.loading:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -24px;
+    margin-left: -20px;
+    -webkit-animation: clc_spin 1s linear infinite;
+    -moz-animation: clc_spin 1s linear infinite;
+    -o-animation: clc_spin 1s linear infinite;
+    animation: clc_spin 1s linear infinite;
+    border-radius: 100%;
+    border-top: 4px solid #32373c;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #32373c;
+    border-right: 4px solid transparent;
+    background: rgba(255, 255, 255, 0.5)
+}
+
+.clc-component-content-block fieldset.checkbox-list,
+.clc-component-content-block-two fieldset.checkbox-list,
+.clc-component-classic-cta-banner fieldset.checkbox-list {
+    margin-top: 10px
+}
+
+.clc-component-content-block fieldset.checkbox-list legend,
+.clc-component-content-block-two fieldset.checkbox-list legend,
+.clc-component-classic-cta-banner fieldset.checkbox-list legend {
+    font-style: italic
+}
+
+.clc-component-content-block fieldset.checkbox-list label,
+.clc-component-content-block-two fieldset.checkbox-list label,
+.clc-component-classic-cta-banner fieldset.checkbox-list label {
+    margin: 10px 0
+}
+
+.clc-component-content-block .link-panel-control .add-link:before,
+.clc-component-content-block-two .link-panel-control .add-link:before,
+.clc-component-classic-cta-banner .link-panel-control .add-link:before {
+    content: '\f103';
+    transition: transform .2s
+}
+
+.clc-component-content-block.clc-links-panel-open .link-panel-control .add-link:before,
+.clc-component-content-block-two.clc-links-panel-open .link-panel-control .add-link:before,
+.clc-component-classic-cta-banner.clc-links-panel-open .link-panel-control .add-link:before {
+    content: '\f132';
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.clc-component-content-block .link-panel-control-links .link,
+.clc-component-content-block-two .link-panel-control-links .link,
+.clc-component-classic-cta-banner .link-panel-control-links .link {
+    display: block;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis
+}
+
+.clc-component-content-block .link-panel-control-links .link:hover:after,
+.clc-component-content-block .link-panel-control-links .link:focus:after,
+.clc-component-content-block-two .link-panel-control-links .link:hover:after,
+.clc-component-content-block-two .link-panel-control-links .link:focus:after,
+.clc-component-classic-cta-banner .link-panel-control-links .link:hover:after,
+.clc-component-classic-cta-banner .link-panel-control-links .link:focus:after {
+    content: '\f504';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 28px;
+    width: 28px;
+    height: 28px;
+    background: #fafafa;
+    font-family: 'dashicons';
+    line-height: 30px;
+    text-align: center;
+    speak: none;
+    vertical-align: middle;
+    color: #777
+}
+
+.clc-component-posts .post-list .loading {
+    position: relative;
+    display: block;
+    height: 28px;
+    background: rgba(0, 0, 0, 0.15)
+}
+
+.clc-component-posts .post-list .loading:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    margin-left: -6px;
+    -webkit-animation: clc_spin 1s linear infinite;
+    -moz-animation: clc_spin 1s linear infinite;
+    -o-animation: clc_spin 1s linear infinite;
+    animation: clc_spin 1s linear infinite;
+    border-radius: 100%;
+    border-top: 4px solid #32373c;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #32373c;
+    border-right: 4px solid transparent;
+    background: rgba(255, 255, 255, 0.5)
+}
+
+.clc-component-posts .post-list>li {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 5px 40px 5px 10px;
+    border: 1px solid #e5e5e5;
+    border-left-width: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.clc-component-posts .post-list .remove-post {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-left: 1px solid #e5e5e5;
+    line-height: 20px;
+    text-align: center;
+    color: red;
+    overflow: hidden
+}
+
+.clc-component-posts .post-list .remove-post:before {
+    content: '\f335';
+    display: block;
+    width: 30px;
+    height: 30px;
+    font: normal 20px/1 'dashicons';
+    line-height: 30px;
+    speak: none;
+    position: relative;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.clc-component-posts .post-list .remove-post:hover,
+.clc-component-posts .post-list .remove-post:focus {
+    background: red;
+    color: #fff
+}
+
+.clc-component-posts .buttons {
+    margin-top: 10px
+}
+
+.clc-component-posts .add-post:before {
+    content: '\f109';
+    transition: transform .2s
+}
+
+.clc-component-posts.clc-posts-panel-open .add-post:before {
+    content: '\f132';
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}

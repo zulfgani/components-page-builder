@@ -1,0 +1,68 @@
+.customize-control-scaled_image {
+  position: relative;
+  padding-bottom: 40px;
+}
+.customize-control-scaled_image .placeholder {
+  padding: 2em 1em;
+  background: #ccc;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+.customize-control-scaled_image .placeholder:active {
+  background: #aaa;
+}
+.customize-control-scaled_image .actions {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.customize-control-scaled_image .actions > button.button {
+  float: right;
+  margin-left: 0.5em;
+  width: auto;
+}
+.customize-control-scaled_image .actions > button.button:last-child {
+  margin-left: 0;
+}
+.customize-control-scaled_image .scale {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden;
+  padding-top: 1em;
+}
+.customize-control-scaled_image .scale.is-visible {
+  position: relative;
+  left: auto;
+  visibility: visible;
+}
+.customize-control-scaled_image .scale .description {
+  font-style: italic;
+}
+.customize-control-scaled_image .scale input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+.clc-component-components-hero-block .darken {
+  margin-top: 10px;
+  font-style: italic;
+}
+.clc-component-components-hero-block .darken input {
+  width: 98%;
+}
+.clc-component-components-hero-block .contact label,
+.clc-component-components-hero-block .contact .option {
+  padding: 5px 0;
+  margin: 0;
+}
+.clc-component-components-hero-block .contact label:last-child,
+.clc-component-components-hero-block .contact .option:last-child {
+  padding: 0;
+}
+.clc-component-components-hero-block .contact .option input[type="text"] {
+  margin-left: 22px;
+  width: auto;
+}
+#customize-control-show_advanced_fonts {
+  display: none !important;
+}

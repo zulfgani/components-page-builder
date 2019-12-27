@@ -1,0 +1,169 @@
+@keyframes clc_spin {
+    0% {
+        -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotateZ(-360deg);
+        transform: rotateZ(-360deg)
+    }
+    100% {
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        transform: rotateZ(0deg)
+    }
+}
+
+@-webkit-keyframes clc_spin {
+    0% {
+        -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotateZ(-360deg);
+        transform: rotateZ(-360deg)
+    }
+    100% {
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        transform: rotateZ(0deg)
+    }
+}
+
+@-moz-keyframes clc_spin {
+    0% {
+        -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotateZ(-360deg);
+        transform: rotateZ(-360deg)
+    }
+    100% {
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        transform: rotateZ(0deg)
+    }
+}
+
+@-o-keyframes clc_spin {
+    0% {
+        -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotateZ(-360deg);
+        transform: rotateZ(-360deg)
+    }
+    100% {
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        transform: rotateZ(0deg)
+    }
+}
+
+.clc-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    border-top: 2px solid #32373c;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid #32373c;
+    border-right: 2px solid transparent;
+    -webkit-animation: clc_spin .7s linear infinite;
+    -moz-animation: clc_spin .7s linear infinite;
+    -o-animation: clc_spin .7s linear infinite;
+    animation: clc_spin .7s linear infinite;
+    visibility: hidden;
+    opacity: .5
+}
+
+.clc-dashicon {
+    display: inline-block;
+    font: normal 20px/1 'dashicons';
+    speak: none;
+    position: relative;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.clc-component-layout {
+    position: relative
+}
+
+.clc-loading {
+    display: block;
+    position: relative;
+    margin: 20px auto;
+    min-width: 200px;
+    min-height: 200px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 4px
+}
+
+.clc-loading:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    -webkit-animation: clc_spin 1s linear infinite;
+    -moz-animation: clc_spin 1s linear infinite;
+    -o-animation: clc_spin 1s linear infinite;
+    animation: clc_spin 1s linear infinite;
+    border-radius: 100%;
+    border-top: 4px solid #32373c;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #32373c;
+    border-right: 4px solid transparent;
+    background: rgba(255, 255, 255, 0.5)
+}
+
+.clc-edit-component {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 0 1em;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    line-height: 40px;
+    border: none;
+    border-radius: 3px;
+    background: #32373c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    opacity: .54
+}
+
+.clc-edit-component:before {
+    content: "\f333";
+    display: inline-block;
+    margin-right: .25em;
+    font-family: "dashicons";
+    font-size: 20px;
+    line-height: 30px;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.clc-edit-component:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-bottom-color: #32373c
+}
+
+.clc-component-layout:hover .clc-edit-component {
+    display: block
+}
+
+.clc-component-layout:hover .clc-edit-component:hover,
+.clc-component-layout:hover .clc-edit-component:focus {
+    color: #fff;
+    opacity: 1
+}
