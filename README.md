@@ -31,29 +31,29 @@ if ( class_exists( 'totclcInit' ) ) {
 ```
 
 # TODO List
-The builder in its current from is to be considered very young,primitive in nature and very much a beta version as it requires a lot of features added in
+* The builder in its current form is to be considered very young,primitive in nature and very much a beta version as it requires a lot of features added in
 
-## Color controls
+### Color controls
 
-## WYSIWYG editor controls
+### WYSIWYG editor controls
 
-## Repeater controls
+### Repeater controls
 
-## Font selector controls
+### Font selector controls
 
-## Icon selector controls
+### Icon selector controls
 
-## Adjustment i.e. margin/padding controls
+### Adjustment i.e. margin/padding controls
 
-## Ability to edit added links/buttons
+### Ability to edit added links/buttons
 
-## Translation
+### Translation
 
-## JS, CSS and general code tidy up
+### JS, CSS and general code tidy up
 
-## And many more yet to be thought of features :) 
+### And many more yet to be thought of features :) 
 
-The above will need all community hands on deck to help out in any capacity possible
+* The above will need all community hands on deck to help out in any capacity possible
 
 ## Changelog
 
