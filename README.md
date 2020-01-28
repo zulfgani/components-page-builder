@@ -3,7 +3,7 @@ A ClassicPress plugin which bundles the [content-layout-control](https://github.
 
 # Based on Theme of the Crop - Layout Control
 
-The editor screen callback and operation will need rethingking and reimplementing for better UI/UX - currently diabled!
+The editor screen callback and operation will need rethingking and reimplementing for better UI/UX - currently disabled!
 For more information, [contact me here](https://cpengineered.com/contact).
 
 # Add theme support for the builder
